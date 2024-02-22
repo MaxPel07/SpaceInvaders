@@ -4,15 +4,18 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 using System.Threading;
+using System.Windows.Input;
 
 namespace Consoletest
 {
+
     class Game
     {
         // Position initiale du joueur
         static int playerPositionX = 40;
         static List<Missile> missiles = new List<Missile>();
 
+        [STAThread]
         static void Main()
         {
             Console.WindowHeight = 40;
@@ -34,15 +37,15 @@ namespace Consoletest
                         Console.ReadKey(true);
                     }
 
-                    if (keyInfo.Key == ConsoleKey.LeftArrow && playerPositionX > 0)
+                    if (Keyboard.IsKeyDown(Key.Left) && playerPositionX > 0)
                     {
                         playerPositionX--;
                     }
-                    else if (keyInfo.Key == ConsoleKey.RightArrow && playerPositionX < Console.WindowWidth - 6)
+                    else if (Keyboard.IsKeyDown(Key.Right) && playerPositionX < Console.WindowWidth - 6)
                     {
                         playerPositionX++;
                     }
-                    else if (keyInfo.Key == ConsoleKey.Spacebar)
+                    else if (Keyboard.IsKeyDown(Key.Space))
                     {
                         FireMissile();
                     }

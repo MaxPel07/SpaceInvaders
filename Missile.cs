@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Consoletest
 {
@@ -37,6 +38,5 @@ namespace Consoletest
                 PositionY = -1;
             }
         }
-
     }
 }
