@@ -1,0 +1,8 @@
+D:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.exe.config
+D:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.exe
+D:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.pdb
+D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.AssemblyReference.cache
+D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.SuggestedBindingRedirects.cache
+D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.CoreCompileInputs.cache
+D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.exe
+D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.pdb

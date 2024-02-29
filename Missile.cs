@@ -12,11 +12,13 @@ namespace Consoletest
     {
         public int PositionX { get; set; }
         public int PositionY { get; set; }
+        public int Life { get; set; }
 
-        public Missile(int x, int y)
+        public Missile(int x, int y, int life)
         {
             PositionX = x;
             PositionY = y;
+            Life = life;
         }
 
         public void Draw()
@@ -32,9 +34,9 @@ namespace Consoletest
 
             PositionY--;
 
-            if (PositionY < 0)
+            if (PositionY < 0 || Life <= 0)
             {
-                // Le missile a atteint le bord supérieur de l'écran, marquez-le pour suppression
+                // Le missile a atteint le bord supérieur de l'écran ou n'a plus de vie, marquez-le pour suppression
                 PositionY = -1;
             }
         }

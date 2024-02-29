@@ -23,6 +23,7 @@ namespace Consoletest
             Console.BufferHeight = 40;
             Console.BufferWidth = 85;
 
+
             Console.CursorVisible = false;
             ConsoleKeyInfo keyInfo;
 
@@ -69,7 +70,7 @@ namespace Consoletest
         
         static void FireMissile()
         {
-            missiles.Add(new Missile(playerPositionX + 2, Console.WindowHeight - 2));
+            missiles.Add(new Missile(playerPositionX + 2, Console.WindowHeight - 2, life : 1)) ;
         }
 
         static void DrawMissiles()
