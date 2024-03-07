@@ -6,3 +6,10 @@ D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.Suggeste
 D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.CoreCompileInputs.cache
 D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.exe
 D:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.pdb
+E:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.exe.config
+E:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.exe
+E:\Semestre 2\I226_progObjet\Consoletest\bin\Debug\Consoletest.pdb
+E:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.AssemblyReference.cache
+E:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\SpaceInvaders.csproj.CoreCompileInputs.cache
+E:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.exe
+E:\Semestre 2\I226_progObjet\Consoletest\obj\Debug\Consoletest.pdb

@@ -17,9 +17,8 @@ namespace Consoletest
         static List<Missile> missiles = new List<Missile>();
 
         [STAThread]
-        static void EasyMode()
+        public static void EasyMode()
         {
-            Menu menu = new Menu();
             Console.WindowHeight = 40;
             Console.WindowWidth = 85;
             Console.BufferHeight = 40;
@@ -28,7 +27,6 @@ namespace Consoletest
 
             Console.CursorVisible = false;
             ConsoleKeyInfo keyInfo;
-            menu.MainMenu();
 
             while (true)
             {
@@ -52,6 +50,11 @@ namespace Consoletest
                     else if (Keyboard.IsKeyDown(Key.Space))
                     {
                         FireMissile();
+                    }
+
+                    if (keyInfo.Key == ConsoleKey.Escape) // Vous pouvez utiliser n'importe quelle touche pour la sortie
+                    {
+                        break; // Sort de la boucle
                     }
                 }
 

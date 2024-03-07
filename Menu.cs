@@ -4,13 +4,16 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+//using System.Windows.Input;
 
 namespace Consoletest
 {
     internal class Menu
     {
+        [STAThread]
         public static void Main()
         {
+            MainMenu();
             void MainMenu()
             {
                 Game game = new Game();
@@ -64,7 +67,7 @@ namespace Consoletest
 
             void DifficultyChoice()
             {
-                Game game = new Game();
+                //Game game = new Game();
                 Console.Clear();
                 Console.WriteLine(
                     "********************** \n" +
@@ -80,11 +83,11 @@ namespace Consoletest
                 switch (key.KeyChar)
                 {
                     case '1':
-                        //HardMode();
+                        Game.EasyMode();
                         break;
 
                     case '2':
-                        game.EasyMode();
+                        //HardMode();
                         break;
 
                     case '3':
