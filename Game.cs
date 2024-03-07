@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Media;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -18,6 +19,7 @@ namespace Consoletest
         [STAThread]
         static void Main()
         {
+            Menu menu = new Menu();
             Console.WindowHeight = 40;
             Console.WindowWidth = 85;
             Console.BufferHeight = 40;
@@ -26,6 +28,7 @@ namespace Consoletest
 
             Console.CursorVisible = false;
             ConsoleKeyInfo keyInfo;
+            menu.ShowMenu();
 
             while (true)
             {
