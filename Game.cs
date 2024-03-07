@@ -17,7 +17,7 @@ namespace Consoletest
         static List<Missile> missiles = new List<Missile>();
 
         [STAThread]
-        static void Main()
+        static void EasyMode()
         {
             Menu menu = new Menu();
             Console.WindowHeight = 40;
@@ -28,7 +28,7 @@ namespace Consoletest
 
             Console.CursorVisible = false;
             ConsoleKeyInfo keyInfo;
-            menu.ShowMenu();
+            menu.MainMenu();
 
             while (true)
             {
@@ -64,16 +64,16 @@ namespace Consoletest
                 Thread.Sleep(20); // Ajoute un délai pour ralentir le mouvement du vaisseau et des missiles
             }
         }
-        
+
         static void DrawPlayer()
         {
             Console.SetCursorPosition(playerPositionX, Console.WindowHeight - 1);
             Console.Write("|-O-|");
         }
-        
+
         static void FireMissile()
         {
-            missiles.Add(new Missile(playerPositionX + 2, Console.WindowHeight - 2, life : 1)) ;
+            missiles.Add(new Missile(playerPositionX + 2, Console.WindowHeight - 2, life: 1));
         }
 
         static void DrawMissiles()
@@ -96,5 +96,3 @@ namespace Consoletest
         }
     }
 }
-
-
