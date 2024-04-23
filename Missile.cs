@@ -26,7 +26,7 @@ namespace Consoletest
             Console.SetCursorPosition(PositionX, PositionY);
             Console.Write("^");
         }
-
+        
         public void Move()
         {
             Console.SetCursorPosition(PositionX, PositionY);
@@ -36,7 +36,8 @@ namespace Consoletest
 
             if (PositionY < 0 || Life <= 0)
             {
-                // Le missile a atteint le bord supérieur de l'écran ou n'a plus de vie, marquez-le pour suppression
+                // Le missile a atteint le bord supérieur de l'écran ou n'a plus de vie.
+                // Il sera supprimé dans la méthode "MoveMissiles()"
                 PositionY = -1;
             }
         }
